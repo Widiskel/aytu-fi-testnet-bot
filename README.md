@@ -42,7 +42,7 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
 - Request TON Faucet on [Test Giver Bot](https://t.me/testgiver_ton_bot)
 - Request aSCALE and aNOT faucet from aytu-fi website
 - after receiving both
-- Swap all aSCALE to TON also aNOT to TON
+- Swap all(if Pool reserve is enough) aSCALE to TON also aNOT to TON
 
 ## SETUP
 
