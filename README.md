@@ -18,6 +18,7 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
   - [TABLE OF CONTENTS](#table-of-contents)
   - [BOT FEATURE](#bot-feature)
   - [PREREQUISITE](#prerequisite)
+  - [TIPS](#tips)
   - [SETUP](#setup)
   - [HOW TO UPDATE](#how-to-update)
   - [NOTE (PLEASE READ THIS BEFORE USING BOT)](#note-please-read-this-before-using-bot)
@@ -35,6 +36,12 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
 - Node JS > v22
 - TON Testnet Balance > 2 TON
 - At least 1 Tx on TON testnet, so your wallet contract will be deployed.
+
+## TIPS 
+- Request TON Faucet on [Test Giver Bot](https://t.me/testgiver_ton_bot)
+- Request aSCALE and aNOT faucet from aytu-fi website
+- after receiving both
+- Swap all aSCALE to TON also aNOT to TON
 
 ## SETUP
 
