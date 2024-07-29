@@ -31,15 +31,25 @@ async function operation(acc) {
         `Account balance < 2 TON , please fill up TON balance using TON Faucet`
       );
     }
-
-    await twist.clear();
+    const delay = Helper.random(10000, 120000);
+    await Helper.delay(
+      delay,
+      acc,
+      `Account ${
+        account.indexOf(acc) + 1
+      } Processing complete Delaying for ${Helper.msToTime(delay)}`,
+      undefined
+    );
+    await twist.clear(acc);
   } catch (error) {
-    // console.log(error);
     await Helper.delay(
       5000,
       acc,
       `Error processing Accoung ${account.indexOf(acc) + 1} : ${error.message}`
     );
+    await twist.clear(acc);
+    // console.log(error);
+    await operation(acc);
   }
 }
 
@@ -47,18 +57,12 @@ async function operation(acc) {
 async function process() {
   logger.clear();
   logger.info(`AYTU-FI AUTO TX BOT STARTED`);
-  for (const acc of account) {
+
+  const allPromise = account.map(async (acc) => {
     await operation(acc);
-  }
-  logger.info(`AYTU-FI AUTO TX BOT FINISHED`);
-  const delay = Helper.random(10000, 120000);
-  await Helper.delay(
-    delay,
-    undefined,
-    `All Account processed Delaying for ${Helper.msToTime(delay)} Second`,
-    undefined
-  );
-  await process();
+  });
+
+  await Promise.all(allPromise);
 }
 
 (async () => {

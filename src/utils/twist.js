@@ -37,10 +37,8 @@ Delay  : ${delay}
     });
   }
 
-  async clear() {
-    for (const acc of account) {
-      await this.twisters.remove(acc);
-    }
+  async clear(acc) {
+    await this.twisters.remove(acc);
   }
 
   /**

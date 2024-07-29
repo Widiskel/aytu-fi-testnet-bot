@@ -30,6 +30,7 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
 
 - Auto Swap (TON - aUSDT, TON - AytuUSDT, TON - aSTONK)
 - Auto Add Liquidity **(REMOVED DUE HIGH GAS FEE SPEND)**
+- Multi Account Support
 
 ## PREREQUISITE
 
