@@ -1,0 +1,23 @@
+{
+  "name": "aytu-fi-tx-bot",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@orbs-network/ton-access": "^2.3.3",
+    "buffer": "^6.0.3",
+    "ton": "^13.9.0",
+    "ton-core": "^0.53.0",
+    "ton-crypto": "^3.2.0",
+    "twisters": "^1.1.0",
+    "winston": "^3.13.0"
+  }
+}
