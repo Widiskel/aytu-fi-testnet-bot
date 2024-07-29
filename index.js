@@ -41,6 +41,7 @@ async function operation(acc) {
       aytufi
     );
     await twist.clear(acc);
+    await operation(acc);
   } catch (error) {
     await Helper.delay(
       5000,
@@ -63,6 +64,7 @@ async function process() {
   });
 
   await Promise.all(allPromise);
+  logger.info(`AYTU-FI AUTO TX BOT FINISHED`);
 }
 
 (async () => {
