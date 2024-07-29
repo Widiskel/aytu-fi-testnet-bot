@@ -38,7 +38,7 @@ async function operation(acc) {
       `Account ${
         account.indexOf(acc) + 1
       } Processing complete Delaying for ${Helper.msToTime(delay)}`,
-      undefined
+      aytufi
     );
     await twist.clear(acc);
   } catch (error) {
