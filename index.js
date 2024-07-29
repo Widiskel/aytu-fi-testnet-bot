@@ -10,7 +10,7 @@ async function operation(acc) {
     await aytufi.initWallet();
     await aytufi.getBalance(true);
 
-    if (aytufi.balance > 2) {
+    if (aytufi.balance > 1) {
       await Helper.delay(
         2000,
         acc,
@@ -27,23 +27,23 @@ async function operation(acc) {
         aytufi
       );
 
-      await Helper.delay(
-        2000,
-        acc,
-        `Starting Provide Liquidity TX for Acoount ${
-          account.indexOf(acc) + 1
-        } ...`,
-        aytufi
-      );
-      await aytufi.pool();
-      await Helper.delay(
-        2000,
-        acc,
-        `All Provide Liquidity TX Completed for Account ${
-          account.indexOf(acc) + 1
-        } ...`,
-        aytufi
-      );
+      // await Helper.delay(
+      //   2000,
+      //   acc,
+      //   `Starting Provide Liquidity TX for Acoount ${
+      //     account.indexOf(acc) + 1
+      //   } ...`,
+      //   aytufi
+      // );
+      // await aytufi.pool();
+      // await Helper.delay(
+      //   2000,
+      //   acc,
+      //   `All Provide Liquidity TX Completed for Account ${
+      //     account.indexOf(acc) + 1
+      //   } ...`,
+      //   aytufi
+      // );
     } else {
       throw Error(
         `Account balance < 2 TON , please fill up TON balance using TON Faucet`

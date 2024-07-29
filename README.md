@@ -13,8 +13,9 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
 
 📖 Details : https://x.com/AytuFi/status/1816766510024495513
 
-## TABLE OF CONTENT
+## TABLE OF CONTENTS
 - [AYTU-FI TESTNET TX BOT](#aytu-fi-testnet-tx-bot)
+  - [TABLE OF CONTENTS](#table-of-contents)
   - [BOT FEATURE](#bot-feature)
   - [PREREQUISITE](#prerequisite)
   - [SETUP](#setup)
@@ -26,8 +27,7 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
 
 ## BOT FEATURE
 
-- Auto Swap (TON - aUSDT, TON - AytuUSDT, TON - aSTONK)
-- Auto Add Liquidity (TON/AYTU_USDT/aUSDT)
+- Auto Swap (TON - aUSDT, TON - AytuUSDT, TON - aSTONK) ss
 
 ## PREREQUISITE
 
