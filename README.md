@@ -35,7 +35,7 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
 
 - Git
 - Node JS > v22
-- TON Testnet Balance > 2 TON
+- TON Testnet Balance > 2 TON (ON YOUR V4R2 Address)
 - At least 1 Tx on TON testnet, so your wallet contract will be deployed.
 
 ## TIPS 
