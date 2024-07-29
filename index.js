@@ -33,7 +33,7 @@ async function operation(acc) {
         `Account balance < 2 TON , please fill up TON balance using TON Faucet`
       );
     }
-    const delay = Helper.random(10000, 120000);
+    const delay = Helper.random(5000, 30000);
     await Helper.delay(
       delay,
       acc,
