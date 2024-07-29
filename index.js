@@ -10,7 +10,7 @@ async function operation(acc) {
     await aytufi.initWallet();
     await aytufi.getBalance(true);
 
-    if (aytufi.balance > 1) {
+    if (aytufi.balance > 2) {
       await Helper.delay(
         2000,
         acc,
