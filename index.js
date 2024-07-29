@@ -20,6 +20,8 @@ async function operation(acc) {
       await aytufi.swap();
       await aytufi.swap("AYTU-USDT");
       await aytufi.swap("STON");
+      await aytufi.swap("NOT");
+      await aytufi.swap("SCALE");
       await Helper.delay(
         2000,
         acc,
