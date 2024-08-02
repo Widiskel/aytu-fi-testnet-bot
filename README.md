@@ -36,14 +36,15 @@ what is aytu-fi ? Aytu-fi is TESTNET ON Ton Testnet Network, How to join ?
 
 - Git
 - Node JS > v22
-- TON Testnet Balance > 2 TON (ON YOUR V4R2 Address)
+- TON Testnet Balance > 2 TON (ON YOUR V4R2 Address) you can use tonkeeper browser extension to switch from mainnet to testnet also for change the Contract Address Type
 - At least 1 Tx on TON testnet, so your wallet contract will be deployed.
 
 ## TIPS 
-- Request TON Faucet on [Test Giver Bot](https://t.me/testgiver_ton_bot)
+- Request TON Faucet on [Test Giver Bot](https://t.me/testgiver_ton_bot) Ensure send to your V4R2 Address
 - Request aSCALE and aNOT faucet from aytu-fi website
 - after receiving both
 - Swap all(if Pool reserve is enough, if not enough just swap any amount ex: 3000) aSCALE to TON also aNOT to TON (make sure the TONKEEPE confirmation say +TON received, otherwise you will not receive any TON)
+- add Pool Liquidity. if you add liquidity to any pool you will get TVL , it will help you to get TON testnet token so you wouldn't net requesting TON token to ton faucet everytime.
 
 ## SETUP
 
