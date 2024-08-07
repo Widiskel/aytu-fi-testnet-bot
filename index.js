@@ -18,7 +18,7 @@ async function operation(acc) {
         aytufi
       );
       await aytufi.swap();
-      // await aytufi.swap("AYTU-USDT");
+      await aytufi.swap("AYTU-USDT");
       await aytufi.swap("STON");
       await aytufi.swap("NOT");
       await aytufi.swap("SCALE");

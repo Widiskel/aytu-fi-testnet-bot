@@ -57,8 +57,8 @@ export class Aytufi extends API {
       let rawData;
       if (to == "USDT") {
         rawData = TxRawBody.TONaUSDT;
-        // } else if (to == "AYTU-USDT") {
-        //   rawData = TxRawBody.TONAYTU_USDT;
+      } else if (to == "AYTU-USDT") {
+        rawData = TxRawBody.TONAYTU_USDT;
       } else if (to == "STON") {
         rawData = TxRawBody.TONaSTON;
       } else if (to == "NOT") {
