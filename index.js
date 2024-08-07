@@ -12,18 +12,18 @@ async function operation(acc) {
 
     if (aytufi.balance > 2) {
       await Helper.delay(
-        2000,
+        300,
         acc,
         `Starting SWAP TX for Acoount ${account.indexOf(acc) + 1} ...`,
         aytufi
       );
       await aytufi.swap();
-      await aytufi.swap("AYTU-USDT");
+      // await aytufi.swap("AYTU-USDT");
       await aytufi.swap("STON");
       await aytufi.swap("NOT");
       await aytufi.swap("SCALE");
       await Helper.delay(
-        2000,
+        300,
         acc,
         `All Swap TX Completed for Account ${account.indexOf(acc) + 1} ...`,
         aytufi

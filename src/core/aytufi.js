@@ -57,8 +57,8 @@ export class Aytufi extends API {
       let rawData;
       if (to == "USDT") {
         rawData = TxRawBody.TONaUSDT;
-      } else if (to == "AYTU-USDT") {
-        rawData = TxRawBody.TONAYTU_USDT;
+        // } else if (to == "AYTU-USDT") {
+        //   rawData = TxRawBody.TONAYTU_USDT;
       } else if (to == "STON") {
         rawData = TxRawBody.TONaSTON;
       } else if (to == "NOT") {
@@ -70,7 +70,7 @@ export class Aytufi extends API {
 
       const inMsg = internal({
         to: ContractEnums.TONJETTONCONTRACT,
-        value: "0.10005",
+        value: "0.10001",
         bounce: true,
         body: bodyCell,
       });
