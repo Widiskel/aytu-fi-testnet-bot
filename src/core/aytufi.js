@@ -20,7 +20,7 @@ export class Aytufi extends API {
         endpoint: this.endpoint,
       });
 
-      await Helper.delay(1000, this.acc, `Initialize Wallet ...`, this);
+      await Helper.delay(300, this.acc, `Initialize Wallet ...`, this);
       const words = this.acc.split(" ");
       if (words.length !== 24) {
         throw Error("Invalid seed phrase length");
@@ -34,7 +34,7 @@ export class Aytufi extends API {
       // console.log(this.wallet);
 
       this.walletContract = this.client.open(this.wallet);
-      await Helper.delay(2000, this.acc, `Wallet Initialized`, this);
+      await Helper.delay(300, this.acc, `Wallet Initialized`, this);
     } catch (error) {
       throw Error(`Error : Failed to initialize wallet - ${error.message}`);
     }
@@ -42,17 +42,17 @@ export class Aytufi extends API {
 
   async getBalance(withMsg = false) {
     if (withMsg) {
-      await Helper.delay(1000, this.acc, `Getting TON Balance ...`, this);
+      await Helper.delay(300, this.acc, `Getting TON Balance ...`, this);
     }
     this.balance = fromNano(await this.walletContract.getBalance());
     if (withMsg) {
-      await Helper.delay(2000, this.acc, `Successfully Get Ton Balance`, this);
+      await Helper.delay(300, this.acc, `Successfully Get Ton Balance`, this);
     }
   }
 
   async swap(to = "USDT") {
     try {
-      await Helper.delay(1000, this.acc, `Swapping TON to ${to} ...`, this);
+      await Helper.delay(300, this.acc, `Swapping TON to ${to} ...`, this);
       const seqno = await this.walletContract.getSeqno();
       let rawData;
       if (to == "USDT") {
@@ -82,7 +82,7 @@ export class Aytufi extends API {
       });
       await this.confirmTx(tx, seqno);
       await Helper.delay(
-        3000,
+        300,
         this.acc,
         `Swap TON to ${to} Complete, Tx Confirmed ...`,
         this
@@ -94,7 +94,7 @@ export class Aytufi extends API {
 
   async confirmTx(tx, seqno) {
     await Helper.delay(
-      1000,
+      300,
       this.acc,
       `TX Executed ${
         JSON.stringify(tx) == undefined ? "" : JSON.stringify(tx)
@@ -104,7 +104,7 @@ export class Aytufi extends API {
     let currentSeqno = seqno;
     while (currentSeqno == seqno) {
       await Helper.delay(
-        5000,
+        1000,
         this.acc,
         `Waiting for tx to be confirmed ...`,
         this

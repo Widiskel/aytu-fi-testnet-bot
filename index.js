@@ -33,7 +33,7 @@ async function operation(acc) {
         `Account balance < 2 TON , please fill up TON balance using TON Faucet`
       );
     }
-    const delay = Helper.random(5000, 30000);
+    const delay = Helper.random(3000, 10000);
     await Helper.delay(
       delay,
       acc,
@@ -46,7 +46,7 @@ async function operation(acc) {
     await operation(acc);
   } catch (error) {
     await Helper.delay(
-      5000,
+      3000,
       acc,
       `Error processing Accoung ${account.indexOf(acc) + 1} : ${error.message}`
     );
